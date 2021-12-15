@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Fauna+One&display=swap');
+
+
+:root {
+    --box-shadow-1: 2px 2px 10px 2px;
+    --box-shadow-2: 2px 2px 5px 2px;
+    --box-shadow-3: 2px 2px 2px 2px;
+    --box-shadow-4: 0px 0px 8px 2px rgb(182, 182, 182);
+    --box-shadow-5: -20px 20px 8px 2px rgb(255, 173, 173);
+    --box-shadow-6: 0px 15px 8px 2px rgb(153, 21, 78);
+
+    --border-radius-1: 20px;
+    --border-radius-2: 10px;
+    --border-radius-3: 5px;
+    --border-radius-50: 50%;
+}
+
+* {
+    font-family: 'Fauna One', serif;
+}
+
+a {
+    text-decoration: none;
+    /* font-weight: 500; */
+}
+
+body {
+    /* overflow: hidden; */
+    background-color: rgb(255, 222, 222);
+}
+
+#navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    width: 100%;
+
+    background-color: rgb(255, 86, 119);
+
+    height: 4rem;
+
+    /* box-shadow: 0px 0px 2px 2px; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 10;
+}
+
+#page-title {
+    color: rgb(153, 21, 78);
+    text-shadow: -2px 3px rgb(255, 201, 60);
+}
+
+#page-title > h2 {
+    font-size: 2rem;
+}
+
+#content {
+    width: 75%;
+    margin: auto;
+
+    margin-top: 4rem;
+}
+
+/* .bg-pink {
+    width: 75%;
+    height: 50vh;
+    background-color: red;
+
+    z-index: -1;
+
+    position: absolute;
+}
+
+.bg-pink-transform {
+    transform: rotate(45deg);
+    left: 60%;
+} */
+
+.anime-card {
+    width: 20rem;
+    height: 20rem;
+
+    margin: 2rem;
+    /* padding: 1rem; */
+
+    float: left;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(255, 210, 210);
+    
+    box-shadow: var(--box-shadow-5);
+
+    border-radius: var(--border-radius-3);
+}
+
+@keyframes anime-card-on-mouseover {
+    from {
+        transform: scale(1, 1);
+    }
+
+    to {
+        transform: scale(1.1, 1.1);
+    }
+}
+
+@keyframes anime-card-on-mouseout {
+    from {
+        transform: scale(1.1, 1.1);
+    }
+
+    to {
+        transform: scale(1, 1);
+    }
+}
+
+/* .anime-card:hover, .anime-card-mouseover {
+    animation-name: anime-card-on-mouseover;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+} */
+
+.anime-card-mouseout {
+    animation-name: anime-card-on-mouseout;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/* #ac-1 {
+    background-color: rgb(0, 97, 97);
+}
+
+#ac-2 {
+    background-color: rgb(11, 92, 0);
+}
+
+#ac-3 {
+    background-color: #201e4e;
+}
+
+#ac-4 {
+    background-color: #f05851;
+}
+
+#ac-5 {
+    background-color: rgb(255, 129, 192);
+} */
+
+.anime-card-thumbnail {
+    width: 100%;
+    /* height: 75%; */
+
+    flex: 70%;
+    
+    border-radius: var(--border-radius-3);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#act-1 {
+    background: url(./assets/visualForm-thumbnail.jpg) no-repeat center center/cover;
+}
+
+#act-2 {
+    background: url(./assets/status-thumbnail.jpg) no-repeat center center/cover;
+}
+
+#act-3 {
+    background: url(./assets/loading-thumbnail.jpg) no-repeat center center/cover;
+}
+
+#act-4 {
+    background: url(./assets/menus-thumbnail.jpg) no-repeat center center/cover;
+}
+
+#act-5 {
+    background: url(./assets/trigger-thumbnail.jpg) no-repeat center center/cover;
+}
+
+.thumbnail-text {
+    flex: 30%;
+    width: 100%;
+    /* height: 15%; */
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-around;
+}
+
+#tt-1, #tt-1 a {
+    color: rgb(2, 177, 177);
+}
+
+#tt-2, #tt-2 a {
+    color: rgb(17, 143, 0);
+}
+
+#tt-3, #tt-3 a {
+    color: #4f4bbe;
+}
+
+#tt-4, #tt-4 a {
+    color: #a80800;
+}
+
+#tt-5, #tt-5 a {
+    color: rgb(255, 36, 145);
+}
+
+.anime-link {
+    font-size: 2rem;
+}
+
+.card-footer {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 1.5rem;
+}
+
+.git-link {
+    flex: 70%;
+}
+
+.icons {
+    flex: 30%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    cursor: pointer;
+}
+
+@keyframes heart-icon-anime {
+    from {
+        transform: scale(1, 1);
+    }
+
+    to {
+        transform: scale(1.4, 1.4);
+    }
+}
+
+@keyframes download-icon-anime {
+    from {
+        transform: scale(1, 1);
+    }
+
+    to {
+        transform: scale(1.4, 1.4);
+    }
+}
+
+.heart-icon-clicked {
+    animation-name: heart-icon-anime;
+    animation-duration: .2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+.download-icon-clicked {
+    animation-name: download-icon-anime;
+    animation-duration: .2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
