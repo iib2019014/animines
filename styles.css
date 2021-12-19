@@ -187,6 +187,14 @@ body {
     background: url(./assets/trigger-thumbnail.jpg) no-repeat center center/cover;
 }
 
+#act-6 {
+    background: url(./assets/spinners-thumbnail.jpg) no-repeat center center/cover;
+}
+
+#act-7 {
+    background: url(./assets/clickers-thumbnail.jpg) no-repeat center center/cover;
+}
+
 .thumbnail-text {
     flex: 30%;
     width: 100%;
@@ -217,6 +225,14 @@ body {
 
 #tt-5, #tt-5 a {
     color: rgb(255, 36, 145);
+}
+
+#tt-6, #tt-6 a {
+    color: orangered;
+}
+
+#tt-7, #tt-7 a {
+    color: rgb(112, 0, 78);
 }
 
 .anime-link {
