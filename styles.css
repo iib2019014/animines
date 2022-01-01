@@ -195,6 +195,10 @@ body {
     background: url(./assets/clickers-thumbnail.jpg) no-repeat center center/cover;
 }
 
+#act-8 {
+    background: url(./assets/responsive-navbar.jpg) no-repeat center center/cover;
+}
+
 .thumbnail-text {
     flex: 30%;
     width: 100%;
@@ -233,6 +237,10 @@ body {
 
 #tt-7, #tt-7 a {
     color: rgb(112, 0, 78);
+}
+
+#tt-8, #tt-8 a {
+    color: rgb(0, 23, 71);;
 }
 
 .anime-link {
